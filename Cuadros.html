@@ -14,42 +14,38 @@ html {background-color: rgb(13, 184, 181);}
 body{width: 1000px; height: 950px; margin: auto ;
 background-color: burlywood;}
 
-nav{ width:1000px; height: 100px; background-color: blue;}  
-header{ width:1000px; height: 300px; background-color: chocolate;}
 
 
-main{ width:1000px; height: 500px; background-color: yellow;}
+
+
 footer{ width:1000px; height: 50px; background-color: orange;}
 
 
 
-  section#box1{width: 200px; height: 50px; float: right;
-background-color: pink;}
+  
   section#box2{width: 200px; height: 50px; float: right;
 background-color: brown;}
-  section#box1{width: 200px; height: 50px; float: right;
-background-color: pink;}
+  section#box1{width: 200px; height: 80px; float: right;
+background-color: rgb(40, 201, 54);}
   section#box3{width: 200px; height: 50px; float: right;
 background-color: pink;}
   section#box4{width: 200px; height: 50px; float: right;
 background-color: brown;}
-  section#box5{width: 200px; height: 50px; float: right;
+  section#box5{width: 200px; height: 49px; float: right;
 background-color: pink;}
   
-  section#banner {width: 800px; height: 300px; float: left;
+  section#banner {width: 1000px; height: 600px; float: left;
 background-color: orange;}
   
   
 
-  aside#left  {width: 200px; height: 500px; float: left;
-background-color: brown;}
-  aside#right  {width: 300px; height: 500px; float: right;
-background-color: pink;}
+ 
+ 
 
 </style>
-<table align="center" cellspacing="4" cellpadding="4" border="1" width=800 bgcolor=dddddd>
+<table align="center" cellspacing="1" cellpadding="0" border="3" width=800 bgcolor=dddddd>
   <tr>
-      <td colspan="2" bgcolor="666666" align="center"><font color="#FFFFFF"><strong>Tabla de sumas</strong></font></td>
+      <td colspan="2" bgcolor="brown" align="center"><font color="#FFFFFF"><strong>Bienvenido al mejor lugar para turismo</strong></font></td>
   </tr>
   <tr>
       <td width="50%">
@@ -63,14 +59,49 @@ background-color: pink;}
 
     <body>
         <nav>
-          <section id="box1"></section>
+          <section id="box1">
+            <input type="image" name="aa27" src="aa27.jpg" width="200" height="80" alt="google.com">
+          </section>
           <section id="box2"></section>
-          <section id="box3"></section>
-          <section id="box4"></section>
-          <section id="box5"></section>
+          <section id="box3">
+          </section>
+
+          <section id="box4">
+            <select name="menu">
+                <option>Uno</option>
+                <option value="2">Dos</option>
+                <option value="three">Tres</option>
+              </select>
+          </section>
+          <section id="box5">
+            <select name="menu">
+                <option>Uno</option>
+                <option value="2">Dos</option>
+                <option value="three">Tres</option>
+              </select>
+          </section>
         </nav>
       <header>
-         <section id="banner"></section>
+         <section id="banner"> 
+            <form>
+                <br>
+                <p><b>Ingresar Usuarios</b></p>
+                <br>
+                <label>Nombre:</label>
+                <input type="text" id="txtN1">
+                <br><br>
+                <label>Apellido:</label>
+                <input type="text" id="txtN2">
+                <br><br>
+                <p>Sexo:
+                    <input type="radio" name="hm" value="h"> Hombre
+                    <input type="radio" name="hm" value="m"> Mujer
+                  </p>
+                  <br>
+                <input type="button" onclick="Sumar();" value="Ingresar">
+            </form>
+            
+         </section>
          <section id="logo"></section>
          <section id="form"></section>
          <section id="login"></section>
@@ -87,16 +118,7 @@ background-color: pink;}
       </main>
       <footer></footer>
 
-  <form>
-    <p><b>Ingrese dos números</b></p>
-    <label>Numero 1:</label>
-    <input type="text" id="txtN1">
-    <br><br>
-    <label>Número 2:</label>
-    <input type="text" id="txtN2">
-    <br><br>
-    <input type="button" onclick="Sumar();" value="Calcular">
-</form>
+  
 <p id="sumando"></p>  
 <script>
     function Sumar() {
