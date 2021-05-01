@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Sumar Dos numeros
+    </title>
+    
+<style>
+html {background-color: blueviolet;}
+</style>
+<table align="center" cellspacing="4" cellpadding="4" border="1" width=800 bgcolor=dddddd>
+  <tr>
+      <td colspan="2" bgcolor="666666" align="center"><font color="#FFFFFF"><strong>Tabla de sumas</strong></font></td>
+  </tr>
+  <tr>
+      <td width="50%">
+          <table align="left" cellspacing="1" cellpadding="1" border="1">
+         
+          </table>
+</head>
+
+
+<body>
+  <form>
+    <p><b>Ingrese dos números</b></p>
+    <label>Numero 1:</label>
+    <input type="text" id="txtN1">
+    <br><br>
+    <label>Número 2:</label>
+    <input type="text" id="txtN2">
+    <br><br>
+    <input type="button" onclick="Sumar();" value="Calcular">
+</form>
+<p id="sumando"></p>  
+<script>
+    function Sumar() {
+        var n1 = document.getElementById('txtN1').value;
+        var n2 = document.getElementById('txtN2').value;
+        var suma = parseInt(n1) + parseInt(n2);
+            var text = "";
+            text = ("La suma es: "+suma);
+            document.getElementById("sumando").innerHTML = text;
+        }
+</script>   
+</body>
+</html>
