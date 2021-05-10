@@ -16,7 +16,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', end
 	line-height: 1.6;
 }
 h2 {
-	color: #000
+	color: #000;
     font-family: Verdana, Geneva, sans-serif;
 	font-size: 22px;
 	margin: 15px;
@@ -165,12 +165,12 @@ label span {
     padding: 20px;
 }
 #carrusel {
-    /*float:left;*/
-    width:100%;
+    /*float:left;
+    width:100%;*/
     overflow:hidden;
-    height:203px;
+    height:40%;
     position:relative;
-    margin-top:20px;
+    margin-top:100px;
     margin-bottom:20px;
 }
  
@@ -191,10 +191,11 @@ label span {
 }
  
 .carrusel {
-    width:300%;
+   /* width:100%;*/
     left:0px;
     position:absolute;
     z-index:0;
+	height: 900 px;
 }
  
 .carrusel>div {
