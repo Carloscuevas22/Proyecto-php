@@ -7,6 +7,7 @@ body {
 	background: -ms-linear-gradient(top,  rgba(125,185,232,1) 71%,rgba(125,185,232,1) 99%); /* IE10+ 
 	background: linear-gradient(to bottom,  rgba(125,185,232,1) 71%,rgba(125,185,232,1) 99%); /* W3C */
 	background-image:url("87-871823_most-beautiful-beach-sunset.jpg") ;
+	/*height: auto;*/
 
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
@@ -40,7 +41,7 @@ border-color:#036;
 	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(209,238,255,1) 100%); /* W3C */
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1eeff',GradientType=0 ); /* IE6-9 */
-	margin-top: 0;
+	margin-top: 60px;
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -58,7 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: 15px;
 	margin-bottom: 15px;
 	color: #000;
-	background-color: #FF9;
+	background-color:white;
 	border: 1px solid #999;
 	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1);
 	-moz-transition: all 0.4s ease-in-out;
@@ -164,52 +165,70 @@ label span {
     border: 1px solid #CCCCCC;
     padding: 20px;
 }
-#carrusel {
-    /*float:left;
-    width:100%;*/
-    overflow:hidden;
-    height:40%;
-    position:relative;
-    margin-top:100px;
-    margin-bottom:20px;
-}
- 
-#carrusel .left-arrow {
-    position:absolute;
-    left:10px;
-    z-index:1;
-    top:50%;
-    margin-top:-9px;
-}
- 
-#carrusel .right-arrow {
-    position:absolute;
-    right:10px;
-    z-index:1;
-    top:50%;
-    margin-top:-9px;
-}
- 
-.carrusel {
-   /* width:100%;*/
-    left:0px;
-    position:absolute;
-    z-index:0;
-	height: 900 px;
-}
- 
-.carrusel>div {
-    float: left;
-    height: 20%;
-    margin-right: 5px;
-    width: 8%;
-    text-align:center;
-}
- 
-.carrusel img {
-    cursor:pointer;
-}
- 
-.product {
-    border:#CCCCCC 1px solid;
-}
+
+.container{
+	margin: auto;
+	background-color: white;
+	width: 800px;
+	padding: 30px;
+	margin-top: 50px;
+  }
+  
+  ul, li {
+	  padding: 0;
+	  margin: 0;
+	  list-style: none;
+  }
+  
+  ul.slider{
+	position: relative;
+	width: 800px;
+	height: 300px;
+  }
+  
+  ul.slider li {
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  opacity: 0;
+	  width: inherit;
+	  height: inherit;
+	  transition: opacity .5s;
+	  background:#fff;
+  }
+  
+  ul.slider li img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+	  opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+	  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+	text-align: center;
+	margin: 20px;
+  }
+  
+  .menu li{
+	display: inline-block;
+	text-align: center;
+  }
+  
+  .menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: grey;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	border-radius: 100%;
+  }

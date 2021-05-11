@@ -11,82 +11,45 @@
 </header>
 <body>
 
-
-    <div id="carrusel">
-        <a href="#" class="left-arrow"><img src="left-arrow.png" /></a>
-        <a href="#" class="right-arrow"><img src="right-arrow.png" /></a>
-        <div class="carrusel">
-            <div class="product" id="product_0">
-                <img src="87-871823_most-beautiful-beach-sunset.jpg" />
-            </div>
-            <div class="product" id="product_1">
-                <img src="Isla_gamez2.jpg"  />
-            </div>
-            <div class="product" id="product_2">
-                <img src="Isla-Bolaños-10.jpg"  />
-            </div>
-            <div class="product" id="product_3">
-                <img src="IslaGameza.jpg"  />
-            </div>
-        </div>
-    </div>
-
-
+    <div class="container">
+  
+        <ul class="slider">
+          <li id="slide1">
+            <img src="Isla-Bolaños-10.jpg"/>
+          </li>
+          <li id="slide2">
+            <img src="Isla_gamez2.jpg"/>
+          </li>
+          <li id="slide3">
+            <img src="IslaGameza.jpg"/>  
+          </li>
+          <li id="slide4">
+            <img src="87-871823_most-beautiful-beach-sunset.jpg"/>
+          </li>
+        </ul>
+        
+        <ul class="menu">
+          <li>
+            <a href="#slide1">1</a>
+          </li>
+          <li>
+            <a href="#slide2">2</a>
+          </li>
+           <li>
+            <a href="#slide3">3</a>
+          </li>
+          <li>
+            <a href="#slide4">4</a>
+          </li>
+        </ul>
+        
+      </div>
 
     <form action="index.html">
         <center>
-            <input type="submit" value="Más Información" class="form-btn">
+            <input type="submit" value="Más Información" class="form-btn" style="margin-top: 30px;">
             
         </center>
     </form>
-</body>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script>
-var current = 0;
-var imagenes = new Array();
- 
-$(document).ready(function() {
-    var numImages = 4;
-    if (numImages <= 3) {
-        $('.right-arrow').css('display', 'none');
-        $('.left-arrow').css('display', 'none');
-    }
- 
-    $('.left-arrow').on('click',function() {
-        if (current > 0) {
-            current = current - 1;
-        } else {
-            current = numImages - 3;
-        }
- 
-        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
- 
-        return false;
-    });
- 
-    $('.left-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('click', function() {
-        if (numImages > current + 3) {
-            current = current+1;
-        } else {
-            current = 0;
-        }
- 
-        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
- 
-        return false;
-    }); 
- });
-</script>
+</body>>
 </html>
