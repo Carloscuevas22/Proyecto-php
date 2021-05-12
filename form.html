@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro a boletin</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+<div class="group">
+  <form action="registro.php" method="POST">
+  <h2><em>Formulario de Registro al Boletin Informativo</em></h2>
+  
+     
+      <label for="nombre">Nombre <span><em>(requerido)</em></span></label>
+      <input type="text" name="nombre" class="form-input" required/>   
+      
+      <label for="apellido">Apellido <span><em>(requerido)</em></span></label>
+      <input type="text" name="apellido" class="form-input" required/>             
+      
+      <label for="email">Email <span><em>(requerido)</em></span></label>
+      <input type="email" name="email" class="form-input" />
+      
+      <label for="telefono">Teléfono <span><em>(requerido)</em></span></label>
+      <input type="text" name="telefono" class="form-input" />
+
+      <label for="edad">Edad <span><em>(requerido)</em></span></label>
+      <input type="text" name="edad" class="form-input" />
+
+      <label for="accede"> Está dispuesto a ser contactado (si o no) <span><em>(requerido)</em></span></label>
+      <input type="text" name="accede" class="form-input" />
+     <center>
+       <input class="form-btn" name="submit" type="submit" value="Suscribirse" />
+       <input class="form-btn"  onClick="window.location.href='index.html'" name="submit" type="button" value="Atrás" />
+      </center>
+    </p>
+  </form>
+</div>
+</body>
+</html>
